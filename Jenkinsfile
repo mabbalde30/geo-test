@@ -24,8 +24,8 @@ pipeline{
         steps{
             nexusArtifactUploader artifacts: [[artifactId: 'bioMedical', classifier: '', 
             file: 'target/bioMedical-0.0.2-SNAPSHOT.jar', type: 'jar']], credentialsId: 'NexusID', 
-            groupId: 'QA', nexusUrl: '198.58.119.40:8081/', nexusVersion: 'nexus3', 
-            protocol: 'http', repository: 'balde-repo', version: '0.0.2'
+            groupId: 'QA', nexusUrl: '198.58.119.40:8081', nexusVersion: 'nexus3', 
+            protocol: 'http', repository: 'balde-repo', version: '0.0.2-SNAPSHOT'
     }
     }
  }
